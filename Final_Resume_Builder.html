@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.js"></script>
     <script src="/Final_RB_JavascriptOne.js"></script>
+    
     <style>
       * {
         box-sizing: border-box;
@@ -107,8 +108,7 @@
       }
     </style>
 
-    <link rel="stylesheet" href="/styles.css" />
-    <title>Resume CV</title>
+    <title>Resume Builder App</title>
   </head>
   <body>
     <div class="header">
@@ -149,7 +149,6 @@
             src="default-logo.png"
             alt="default-picture"
             class="img-logo"
-            id="imgT"
           />
             <label for="">Choose a Profile Picture</label>
             <br />
@@ -195,7 +194,7 @@
             <label for="nameField">Languages you Known</label>
             <input
               type="text"
-              id="addressField"
+              id="languageField"
               placeholder="Your Address"
               class="form-control"
             />
@@ -379,13 +378,12 @@
     </div>
 
     <!-- Template generate -->
-
     <div class="container" id="resume-template">
       <div class="row">
         <div class="col-md-4 background text-center">
           <img
             src="default-logo.png"
-            alt="default-picture"
+            alt="default logo"
             class="img-logo"
             id="imgT"
           />
@@ -412,7 +410,7 @@
               <a id="stT" href="#4"></a>
             </p>
             <p class="">
-              <a id="bg1" href="#4"></a>
+              <a id="bg1" href="#5"></a>
             </p>
           
             
@@ -593,5 +591,6 @@
         </button>
       </div>
     </div>
+    
   </body>
 </html>
