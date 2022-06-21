@@ -46,10 +46,10 @@ function addNewField4() {
     newNode.setAttribute('rows', 3);
     newNode.classList.add('mt-2')
 
-    let ceOb = document.getElementById('pd');
-    let ceAddButtonOb = document.getElementById('pdAddButton');
+    let pdOb = document.getElementById('pd');
+    let pdAddButtonOb = document.getElementById('pdAddButton');
 
-    ceOb.insertBefore(newNode, pdAddButtonOb);
+    pdOb.insertBefore(newNode, pdAddButtonOb);
 }
 
 function addNewField5() {
@@ -59,10 +59,10 @@ function addNewField5() {
     newNode.setAttribute('rows', 3);
     newNode.classList.add('mt-2')
 
-    let ceOb = document.getElementById('ts');
-    let ceAddButtonOb = document.getElementById('tsAddButton');
+    let tsOb = document.getElementById('ts');
+    let tsAddButtonOb = document.getElementById('tsAddButton');
 
-    ceOb.insertBefore(newNode, tsAddButtonOb);
+    tsOb.insertBefore(newNode, tsAddButtonOb);
 }
 
 function generateCv() {
@@ -82,6 +82,9 @@ function generateCv() {
 
     //address field
     document.getElementById('addT1').innerHTML = document.getElementById('addressField').value;
+
+    //Languages field
+    document.getElementById('langT').innerHTML = document.getElementById('languageField').value;
 
     //linkedin field
     document.getElementById('lkT').innerHTML = document.getElementById('linkedinField').value;
@@ -146,8 +149,8 @@ function generateCv() {
     }
     document.getElementById('techT').innerHTML = str4;
 
-  //decleration field
-  document.getElementById('declerationT').innerHTML = document.getElementById('declField').value;
+   //decleration field
+   document.getElementById('declerationT').innerHTML = document.getElementById('declField').value;
 
     //Image field
     let file = document.getElementById('imgField').files[0]; //getting first(index at 0) file
